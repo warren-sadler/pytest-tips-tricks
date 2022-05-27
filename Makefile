@@ -4,7 +4,7 @@ install:
 
 
 test:
-	python -m pytest -vv tests
+	python -m pytest -vv --cov=hello --cov=greeting tests
 
 lint:
 	pylint --disable=R,C hello.py
